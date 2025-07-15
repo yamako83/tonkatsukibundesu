@@ -1,176 +1,25 @@
-tonkatsu-site/
-├── index.html
-├── gensuiton.html
-├── marushichi.html
-├── ippekoppe.html
-├── iwai.html
-├── style.css
-├── script.js
-└── images/
-    ├──IMG_2992.png
-    ├── IMG_2991.png
-    ├── tonkatsu.png
-    ├── IMG_2996.jpeg
-    ├── IMG_2994.jpeg
-    ├── IMG_2995.jpeg
-    └── IMG_2992.png
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>気分で選べるとんかつ店</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>あなたの気分で選べるとんかつ店</h1>
   </header>
   <main>
-31    <div class="choices">
-32      <button onclick="changeImage('gensuiton.html')">さっぱりしたい → 幻水豚</button>
-33      <button onclick="changeImage('marushichi.html')">ガッツリ食べたい → 丸七</button>
-34      <button onclick="changeImage('ippekoppe.html')">香りを楽しみたい → いっぺこっぺ</button>
-35      <button onclick="changeImage('iwai.html')">とろける豚のお刺身 → いわい</button>
-36    </div>
-37    <img id="pigImage" src="images/IMG_2991.png" alt="かわいい豚">
+    <div class="choices">
+      <button onclick="location.href='gensuiton.html'">さっぱりしたい → 幻水豚</button>
+      <button onclick="location.href='marushichi.html'">ガッツリ食べたい → 丸七</button>
+      <button onclick="location.href='ippekoppe.html'">香りを楽しみたい → いっぺこっぺ</button>
+      <button onclick="location.href='iwai.html'">とろける豚のお刺身 → いわい</button>
+    </div>
+    <img src="IMG_2991.png" alt="かわいい豚" class="main-photo">
   </main>
   <footer>
     <p>&copy; 2025 Tonkatsu Fan</p>
   </footer>
-</body>
-</html>
-
-body {
-  font-family: sans-serif;
-  background: #fff8f0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-header, footer {
-  background: #f8c471;
-  padding: 1em;
-}
-
-main {
-  padding: 2em;
-}
-
-.choices button {
-  margin: 1em;
-  padding: 1em 2em;
-  font-size: 1.1em;
-}
-
-.main-photo {
-  width: 90%;
-  max-width: 600px;
-}
-
-.description {
-  padding: 1em;
-}
-
-function changeImage(link) {
-  const img = document.getElementById("pigImage");
-  img.src = "images/pig-real.png";
-  setTimeout(() => {
-    window.location.href = link;
-  }, 600); // 画像切り替え後に遷移
-}
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>とんかつ幻水豚</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header><h1>とんかつ幻水豚</h1></header>
-  <main class="detail-page">
-    <img src="images/gensuiton-tonkatsu.jpg" alt="とんかつ幻水豚" class="main-photo">
-    <section class="description">
-      <h2>さっぱりしたいあなたへ</h2>
-      <p>三軒茶屋のとんかつ屋。</p>
-      <p>白い衣と低温調理された豚は、高価で特別なブランド豚という訳ではなく、素材本来の旨味を引き出した店。</p>
-      <p>多くの部位も提供している。</p>
-    </section>
-    <p><a href="index.html">← ホームに戻る</a></p>
-  </main>
-  <footer><p>&copy; 2025 Tonkatsu Fan</p></footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>とんかつ丸七</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header><h1>とんかつ丸七</h1></header>
-  <main class="detail-page">
-    <img src="images/marushichi-tonkatsu.jpg" alt="とんかつ丸七" class="main-photo">
-    <section class="description">
-      <h2>ガッツリ食べたいあなたへ</h2>
-      <p>あの有名な「閉じないカツ丼」。</p>
-      <p>出汁と甘いタレで味付けされた卵がご飯に合うことは間違いなく、厚く柔らかい低温調理された豚が乗っている。</p>
-      <p>タレと一緒に煮込まないことでサクサクのまま食べ切ることができる。</p>
-    </section>
-    <p><a href="index.html">← ホームに戻る</a></p>
-  </main>
-  <footer><p>&copy; 2025 Tonkatsu Fan</p></footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>いっぺこっぺ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header><h1>いっぺこっぺ</h1></header>
-  <main class="detail-page">
-    <img src="images/ippekoppe-tonkatsu.jpg" alt="いっぺこっぺ" class="main-photo">
-    <section class="description">
-      <h2>香りを楽しみたいあなたへ</h2>
-      <p>暑く切られた豚は噛みごたえもがっしり。</p>
-      <p>硫黄の香りのするお塩とレモンで食べれば、塩で食べるとんかつの旨味に圧倒される。</p>
-    </section>
-    <p><a href="index.html">← ホームに戻る</a></p>
-  </main>
-  <footer><p>&copy; 2025 Tonkatsu Fan</p></footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>とんかついわい</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header><h1>とんかついわい</h1></header>
-  <main class="detail-page">
-    <img src="images/iwai-tonkatsu.jpg" alt="とんかついわい" class="main-photo">
-    <section class="description">
-      <h2>とろける豚のお刺身のような体験を</h2>
-      <p>わさびと九州醤油で食べるとんかつは、1度食べると常識が変わる。</p>
-      <p>とろける身は、特別なお祝いの日に私たちを誘う。</p>
-    </section>
-    <p><a href="index.html">← ホームに戻る</a></p>
-  </main>
-  <footer><p>&copy; 2025 Tonkatsu Fan</p></footer>
 </body>
 </html>
