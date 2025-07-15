@@ -7,13 +7,13 @@ tonkatsu-site/
 ├── style.css
 ├── script.js
 └── images/
-    ├── pig-cute.png
-    ├── pig-real.png
+    ├──IMG_2992.png
+    ├── IMG_2991.png
     ├── tonkatsu.png
-    ├── gensuiton-tonkatsu.jpg
-    ├── marushichi-tonkatsu.jpg
-    ├── ippekoppe-tonkatsu.jpg
-    └── iwai-tonkatsu.jpg
+    ├── IMG_2996.jpeg
+    ├── IMG_2994.jpeg
+    ├── IMG_2995.jpeg
+    └── IMG_2992.png
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -28,13 +28,13 @@ tonkatsu-site/
     <h1>あなたの気分で選べるとんかつ店</h1>
   </header>
   <main>
-    <div class="choices">
-      <button onclick="changeImage('gensuiton.html')">さっぱりしたい → 幻水豚</button>
-      <button onclick="changeImage('marushichi.html')">ガッツリ食べたい → 丸七</button>
-      <button onclick="changeImage('ippekoppe.html')">香りを楽しみたい → いっぺこっぺ</button>
-      <button onclick="changeImage('iwai.html')">とろける豚のお刺身 → いわい</button>
-    </div>
-    <img id="pigImage" src="images/pig-cute.png" alt="かわいい豚">
+31    <div class="choices">
+32      <button onclick="changeImage('gensuiton.html')">さっぱりしたい → 幻水豚</button>
+33      <button onclick="changeImage('marushichi.html')">ガッツリ食べたい → 丸七</button>
+34      <button onclick="changeImage('ippekoppe.html')">香りを楽しみたい → いっぺこっぺ</button>
+35      <button onclick="changeImage('iwai.html')">とろける豚のお刺身 → いわい</button>
+36    </div>
+37    <img id="pigImage" src="images/IMG_2991.png" alt="かわいい豚">
   </main>
   <footer>
     <p>&copy; 2025 Tonkatsu Fan</p>
