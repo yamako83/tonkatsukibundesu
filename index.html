@@ -2,24 +2,78 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>気分で選べるとんかつ店</title>
-  <link rel="stylesheet" href="style.css">
+  <title>あなたの気分で選べるとんかつ店</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+    }
+
+    .pig-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .pig-block {
+      cursor: pointer;
+      width: 150px;
+    }
+
+    .pig-block img {
+      width: 100%;
+      transition: transform 0.1s;
+    }
+
+    .label {
+      margin-top: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .pig-block:hover img {
+      animation: shake 0.4s;
+      animation-iteration-count: 1;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(3px, 0); }
+      50% { transform: translate(-3px, 0); }
+      75% { transform: translate(3px, 0); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>あなたの気分で選べるとんかつ店</h1>
-  </header>
-  <main>
-    <div class="choices">
-      <button onclick="location.href='gensuiton.html'">さっぱりしたい → 幻水豚</button>
-      <button onclick="location.href='marushichi.html'">ガッツリ食べたい → 丸七</button>
-      <button onclick="location.href='ippekoppe.html'">香りを楽しみたい → いっぺこっぺ</button>
-      <button onclick="location.href='iwai.html'">とろける豚のお刺身 → いわい</button>
+
+  <h1>あなたの気分で選べるとんかつ店</h1>
+
+  <div class="pig-container">
+    <div class="pig-block" onclick="location.href='gensuiton.html'">
+      <img src="IMG_2991.png" alt="幻水豚">
+      <div class="label">さっぱりしたい → 幻水豚</div>
     </div>
-    <img src="IMG_2991.png" alt="かわいい豚" class="main-photo">
-  </main>
-  <footer>
-    <p>&copy; 2025 Tonkatsu Fan</p>
-  </footer>
+
+    <div class="pig-block" onclick="location.href='marushichi.html'">
+      <img src="IMG_2991.png" alt="丸七">
+      <div class="label">ガッツリ食べたい → 丸七</div>
+    </div>
+
+    <div class="pig-block" onclick="location.href='ippekoppe.html'">
+      <img src="IMG_2991.png" alt="いっぺこっぺ">
+      <div class="label">香りを楽しみたい → いっぺこっぺ</div>
+    </div>
+
+    <div class="pig-block" onclick="location.href='iwai.html'">
+      <img src="IMG_2991.png" alt="いわい">
+      <div class="label">とろける脂の誘惑 → いわい</div>
+    </div>
+  </div>
+
+  <p style="margin-top: 50px;">© 2025 Tonkatsu Fan</p>
+
 </body>
 </html>
