@@ -18,19 +18,27 @@
     }
 
     .pig-block {
+      position: relative;
       cursor: pointer;
       width: 150px;
     }
 
     .pig-block img {
       width: 100%;
+      display: block;
       transition: transform 0.1s;
     }
 
-    .label {
-      margin-top: 8px;
+    .overlay-text {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      text-align: center;
       font-weight: bold;
-      font-size: 14px;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+      font-size: 16px;
+      pointer-events: none; /* クリックが画像に届くように */
     }
 
     .pig-block:hover img {
@@ -54,22 +62,22 @@
   <div class="pig-container">
     <div class="pig-block" onclick="location.href='gensuiton.html'">
       <img src="IMG_2991.png" alt="幻水豚">
-      <div class="label">さっぱりしたい → 幻水豚</div>
+      <div class="overlay-text">さっぱり</div>
     </div>
 
     <div class="pig-block" onclick="location.href='marushichi.html'">
       <img src="IMG_2991.png" alt="丸七">
-      <div class="label">ガッツリ食べたい → 丸七</div>
+      <div class="overlay-text">ガッツリ</div>
     </div>
 
     <div class="pig-block" onclick="location.href='ippekoppe.html'">
       <img src="IMG_2991.png" alt="いっぺこっぺ">
-      <div class="label">香りを楽しみたい → いっぺこっぺ</div>
+      <div class="overlay-text">香りを楽しむ</div>
     </div>
 
     <div class="pig-block" onclick="location.href='iwai.html'">
       <img src="IMG_2991.png" alt="いわい">
-      <div class="label">とろける脂の誘惑 → いわい</div>
+      <div class="overlay-text">とろける気分</div>
     </div>
   </div>
 
