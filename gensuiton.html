@@ -6,56 +6,74 @@
   <style>
     body {
       font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      background-color: #fefcf6;
+      background-color: #fdf9f3;
+      margin: 0;
       padding: 20px;
-      line-height: 1.6;
-      color: #333;
+      color: #3b2e1a;
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     h1 {
-      font-size: 28px;
-      color: #442200;
+      font-size: 24px;
+      color: #5a3e1b;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     img {
+      display: block;
       max-width: 100%;
       height: auto;
+      margin: 0 auto 20px auto;
       border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .return-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
+    h2 {
       font-size: 18px;
+      color: #7b5c38;
+      border-bottom: 2px solid #d2b48c;
+      padding-bottom: 4px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .button-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto 20px;
+      padding: 15px 25px;
       background-color: #f2c04c;
       color: #000;
       text-decoration: none;
-      border-radius: 10px;
       font-weight: bold;
+      border-radius: 10px;
+      font-size: 18px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      width: fit-content;
     }
 
-    .return-button:hover {
-      background-color: #e5b040;
-    }
-
-    .section-title {
-      font-size: 20px;
-      margin-top: 30px;
-      color: #5a3e1b;
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #7c6a58;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <h1>とんかつ幻水豚</h1>
+
   <img src="IMG_2995.jpeg" alt="とんかつ幻水豚の画像">
 
-  <p><strong>さっぱりしたいあなたへ</strong><br>
-  三軒茶屋のとんかつ屋。白い衣と低温調理された豚は、高価で特別なブランド豚という訳ではなく、素材本来の旨味を引き出した店。多くの部位も提供している。ばら肉のとんかつとか珍しくないですか！？</p>
+  <h2>さっぱりしたいあなたへ</h2>
+  <p>
+    三軒茶屋のとんかつ屋。白い衣と低温調理された豚は、高価で特別なブランド豚という訳ではなく、素材本来の旨味を引き出した店。多くの部位も提供している。ばら肉のとんかつとか珍しくないですか！？
+  </p>
 
-  <h2 class="section-title">主なクチコミ</h2>
+  <h2>主なクチコミ</h2>
   <ul>
     <li>衣が軽くてサクサク。脂っこさがなく、最後まで美味しく食べられる。</li>
     <li>豚肉の甘みとジューシーさが引き立っている。火入れの技術が素晴らしい。</li>
@@ -63,13 +81,15 @@
     <li>価格はやや高めだが、それ以上の満足感が得られるとの声多数。</li>
   </ul>
 
-  <h2 class="section-title">アクセス情報</h2>
-  <p>三軒茶屋駅から徒歩約6分。<br>
-  世田谷通り沿いにあり、静かなエリアにひっそりと佇んでいます。</p>
+  <h2>アクセス情報</h2>
+  <p>
+    三軒茶屋駅より徒歩約6分。<br>
+    世田谷通り沿いにあり、静かなエリアにひっそりと佇んでいます。
+  </p>
 
-  <a href="index.html" class="return-button">気分が変わった</a>
+  <a href="index.html" class="button-link">気分が変わった</a>
 
-  <p style="margin-top: 40px;">© 2025 Tonkatsu Fan</p>
+  <footer>© 2025 Tonkatsu Fan</footer>
 
 </body>
 </html>
